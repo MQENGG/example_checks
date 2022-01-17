@@ -10,6 +10,11 @@ def exists():
 def compiles():
     """hello.c compiles"""
     check50.c.compile("hello.c", lcs50=True)
+    
+@check50.check(compiles)
+def prompt():
+    """correct prompt"""
+    check50.run("./hello".stdout("Enter your name:")
 
 @check50.check(compiles)
 def emma():

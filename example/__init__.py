@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def prompt():
     """correct prompt"""
-    check50.run("./hello".stdout("Enter your name:")
+    check50.run("./hello").stdout("Enter your name:")
 
 @check50.check(compiles)
 def emma():
